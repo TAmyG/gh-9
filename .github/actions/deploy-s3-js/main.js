@@ -11,7 +11,6 @@ function run() {
 
   // 2 upload files
   const s3Uri = `s3://${bucket}`;
-  AWS_ACCESS_KEY_ID = AKIA4ZGAIYIQOEF6NIR4;
   exec.exec(`aws s3 sync ${distFolder} ${s3Uri} --region ${bucketRegion}`);
   core.notice("Hello from my custom JS action!");
 }
