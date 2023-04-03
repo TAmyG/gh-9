@@ -15,5 +15,5 @@ outputs:
   website-url:
     description: "URL of the deployed website"
 runs:
-  usign: "docker"
+  using: "docker"
   image: "Dockerfile"
